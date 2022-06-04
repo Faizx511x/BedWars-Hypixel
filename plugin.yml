@@ -1,5 +1,5 @@
 name: BedWars-Hypixel
-version: 2.0
+version: 1.1
 api: ["4.0.0"]
 main: BedWars\BedWars
 author: ["Boi", "FaizDev"]
@@ -17,7 +17,11 @@ permissions:
     default: op
   bedwars.command.addteam:
     default: op
+  bedwars.command.setposition:
+    default: op
   bedwars.command.setpos:
+    default: op
+  bedwars.command.setgenerator:
     default: op
   bedwars.command.addgenerator:
     default: op
