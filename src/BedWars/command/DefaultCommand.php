@@ -23,11 +23,14 @@ use pocketmine\world\World;
 class DefaultCommand extends \pocketmine\command\Command
 {
 	private $commandInfo = [
+		'new' => ['desc' => "Create new game", 'usage' => "<game_id> <min_players> <players_per_team> <start_time> <map_name> <world_name>"],
 		'create' => ['desc' => "Create new game", 'usage' => "<game_id> <min_players> <players_per_team> <start_time> <map_name> <world_name>"],
 		'delete' => ['desc' => "Delete game", 'usage' => "<game_id>"],
 		'setlobby' => ['desc' => "Set lobby of a game", 'usage' => "<game_id>"],
-		'addteam' => ['desc' => "Add team to a game", 'usage' => "<game_id> <blue|red|yellow|green|aqua|gold|white>"],
+		'addteam' => ['desc' => "Add team to a game", 'usage' => "<game_id> <red|blue|yellow|green|aqua|white|pink|gray>"],
 		'setpos' => ['desc' => "Set spawn & shop positions", 'usage' => "<game_id> <team_name> <1|2|3> - 3 = Player Spawn, 2 = Upgrade Shop, 1 = Item Shop"],
+		'setposition' => ['desc' => "Set spawn & shop positions", 'usage' => "<game_id> <team_name> <1|2|3> - 3 = Player Spawn, 2 = Upgrade Shop, 1 = Item Shop"],
+		'setgenerator' => ['desc' => "Add generator", 'usage' => "<game_id> <iron|gold|diamond|emerald> (team)"],
 		'addgenerator' => ['desc' => "Add generator", 'usage' => "<game_id> <iron|gold|diamond|emerald> (team)"],
 		'setbed' => ['desc' => "Set team's bed", 'usage' => "<game_id> <team>"],
 		'addsafearea' => ['desc' => "Add area restricted for placing blocks", 'usage' => "<game_id> <itemId:damage|null,itemId:damage|null...)"],
@@ -76,6 +79,7 @@ class DefaultCommand extends \pocketmine\command\Command
 		}
 		
 		switch($args[0]){
+			case 'new';
 			case 'create';
 				if(count($args) < 7){
 					$sender->sendMessage($this->getSubUsage('create'));
@@ -241,9 +245,9 @@ class DefaultCommand extends \pocketmine\command\Command
 				$this->getPlugin()->addTeam($game_id, $team);
 				$sender->sendMessage(TextFormat::GREEN . "Team added!");
 			break;
-			
-			case 'addgenerator';
+				
 			case 'setgenerator';
+			case 'addgenerator';
 			
 			if(!$sender instanceof Player){
 				$sender->sendMessage(TextFormat::GREEN . "This command can be used only in-game");
@@ -509,6 +513,18 @@ class DefaultCommand extends \pocketmine\command\Command
      * @param CommandSender $sender
      */
 	private function sendHelp(CommandSender $sender) {
-		$sender->sendMessage(TextFormat::BOLD . TextFormat::YELLOW . "§b-----§eBedWars Commands§b----- \n§a/bw create \n§a/bw delete \n§a/bw setlobby \n§a§a/bw addteam \n§a/bw setbed \n§a/bw addsafearea \n§a/bw setpos \n§a/bw addgenerator \n/§abw load \n§a/bw list \n§a/bw join \n§a/bw random \n§a/bw start");
+		$sender->sendMessage("§b-----§eBedWars Commands§b-----§e");
+		$sender->sendMessage("§a/bw create §r§f: Create new game");
+		$sender->sendMessage("§a/bw delete §r§f: Delete game");
+		$sender->sendMessage("§a/bw setlobby §r§f: Set lobby of a game");
+		$sender->sendMessage("§a/bw addteam §r§f: Add team to a game");
+		$sender->sendMessage("§a/bw setbed §r§f: Set team's bed");
+		$sender->sendMessage("§a/bw addsafearea §r§f: Add area restricted for placing blocks");
+		$sender->sendMessage("§a/bw setpos §r§f: Set spawn & shop positions");
+		$sender->sendMessage("§a/bw setgenerator §r§f: Add generator");
+		$sender->sendMessage("§a/bw load §r§f: Load arena after finishing setup");
+		$sender->sendMessage("§a/bw join §r§f: Join arena by id");
+		$sender->sendMessage("§a/bw random §r§f: Join random arena");
+		$sender->sendMessage("§a/bw start§r§f: Force start the game");
 	}
 }
