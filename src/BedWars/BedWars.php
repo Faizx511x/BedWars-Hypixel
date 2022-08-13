@@ -13,7 +13,7 @@ use pocketmine\scheduler\Task;
 use pocketmine\tile\Sign;
 use pocketmine\utils\TextFormat;
 use pocketmine\math\Vector3;
-use pocketmine\world\World;
+use pocketmine\level\Level;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\entity\EntityFactory;
