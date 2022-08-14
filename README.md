@@ -1,4 +1,4 @@
-# BedWarsUltimate - PocketMine Plugin
+# BedWars Hypixel - PocketMine Plugin
 BedWars plugin with features you won't see anywhere else!
 
 ![Image from game](https://i.imgur.com/X9zSs1u.png)</br>
@@ -11,7 +11,7 @@ BedWars plugin with features you won't see anywhere else!
 - Custom generators (like Hypixel's)
 - Hypixel famous Popup-Tower
 - More cool items
-- API 4.2.3 support
+- API 4.0.0 support
 - New updates every week
 
 ## How to setup
@@ -27,5 +27,4 @@ BedWars plugin with features you won't see anywhere else!
 
 To create join sign place a new sign and put [bedwars] or [bw] on the first line, the second line will be the ID of your game.
 
-For support & updates join my discord server - https://discord.gg/6reG9s7T7j
-
+For support & updates join my discord server - https://discord.gg/6reG9s7T7

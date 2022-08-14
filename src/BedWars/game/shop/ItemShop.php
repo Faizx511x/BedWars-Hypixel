@@ -30,45 +30,46 @@ class ItemShop
      * @var array $shopWindows
      */
     public static $shopWindows = [
-        1 => ["name" =>"Armor", "image" => ""],
-        2 => ["name" =>"Weapons", "image" => ""],
-        3 => ["name" =>"Blocks", "image" => ""],
-        4 => ["name" => "Bows", "image" => ""],
-        5 => ["name" => "Potions" ,"image" => ""],
-        6 => ["name" => "Specials", "image" => ""]
+        1 => ["name" =>"Armor", "image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e0/Iron_Chestplate_%28item%29_JE2_BE2.png/revision/latest?cb=20190406141220"],
+        2 => ["name" =>"Weapons", "image" => "http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/fdf3c1e9be5e207.png"],
+        3 => ["name" =>"Blocks", "image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/fb/Red_Wool_JE2_BE2.png/revision/latest?cb=20200413084539"],
+        4 => ["name" => "Bows", "image" => "https://static.wikia.nocookie.net/minecraft/images/6/6b/EnchantedBow.gif/revision/latest/smart/width/300/height/300?cb=20200117003024"],
+        5 => ["name" => "Potions" ,"image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/fb/Glass_Bottle_JE2_BE2.png/revision/latest?cb=20200523234146"],
+        6 => ["name" => "Specials", "image" => "https://minecraft-max.net/upload/iblock/6f4/6f40ca614124b2ab9f10dac2ea78b4d3.png"]
     ];
 
     /**
      * @var array $shopPages
      */
     public static $shopPages = [
-        0 => ["§6Chainmal Armor\n§l§e40 IRON" => ["image" => ""],
-            "§6Iron Armor §c[PERMANENT]\n§l§e12 GOLD" => ["image" => ""],
-            "§6Diamond Armor §c[PERMANENT]\n§l§e6 EMERALD" => ["image" => ""]],
-        1 => ["§6Stone Sword\n§l§e10 IRON" => ["image" => ""],
-            "§6Iron Sword\n§l§e7 GOLD" => ["image" => ""],
-            "§6Diamond Sword\n§l§e7 EMERALD" => ["image" => ""],
-            "§6Knockback Stick\n§l§e2 EMERALD" => ["image" => ""]],
-        2 => ["§6Wool 16x\n§l§e4 IRON" => ["image" => ""],
-            "§6Sandstone 16x\n§l§e12 IRON" => ["image" => ""],
-            "§6Endstone 12x\n§l§e24 IRON" => ["image" => ""],
-            "§6Ladder 16x\n§l§e4 IRON" => ["image" => ""],
-            "§6Oak Wood 16x\n§l§e4 GOLD" => ["image" => ""],
-            "§6Obsidian 4x\n§l§e4 EMERALD" => ["image" => ""]],
-        3 => ["§6Normal Bow\n§l§e12 GOLD" => ["image" => ""],
-            "§6Bow §b(Power 1)\n§l§e24 GOLD" => ["image" => ""],
-            "§6Bow §b(Power 1, Punch 1)\n§l§e6 EMERALD" => ["image" => ""]],
-        4 => ["§6Speed II Potion (45 sec.)\n§l§e1 EMERALD" => ["image" => ""],
-            "§6Jump V Potion (45 sec.)\n§l§e1 EMERALD" => [""],
-            "§6Invisibility Potion (30 sec.)\n§l§e1 EMERALD" => [""]],
-        5 => ["§6Golden Apple\n§l§e3 GOLD" => ["image" => ""],
-            "§6Bedbug\n§l§e50 IRON" => ["image" => ""],
-            "§6Fireball\n§l§e50 IRON" => ["image" => ""],
-            "§6TNT\n§l§e8 GOLD" => ["image" => ""],
-            "§6Enderpearl\n§l§e4 EMERALD" => ["image" => ""],
-            "§6Water Bucker\n§l§e1 EMERALD" => ["image" => ""],
-            "§6Bridge Egg\n§l§e4 EMERALD" => ["image" => ""],
-            "§6Compact Popup-Tower\n§l§e24 IRON" => ["image" => ""]
+        0 => ["§6Chainmal Armor\n§l§e40 IRON" => ["image" => "https://lh3.googleusercontent.com/i8OJvH_x9a1SFd-F358jlCKe9KAXrpw0WO_22SuQRHWjLyFcOy0GFQyBFqlcENNEzXktnruwr71KBzP-j87zYg"],
+            "§6Iron Armor §c[PERMANENT]\n§l§e12 GOLD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e0/Iron_Chestplate_%28item%29_JE2_BE2.png/revision/latest?cb=20190406141220"],
+            "§6Diamond Armor §c[PERMANENT]\n§l§e6 EMERALD" => ["image" => "https://www.seekpng.com/png/full/819-8194450_minecraft-diamond-chestplate-chestplate-minecraft.png"]],
+        1 => ["§6Stone Sword\n§l§e10 IRON" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b1/Stone_Sword_JE2_BE2.png/revision/latest/scale-to-width-down/160?cb=20200217235849"],
+            "§6Iron Sword\n§l§e7 GOLD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/01/Iron_Sword_JE1_BE1.png/revision/latest?cb=20190516111355"],
+            "§6Diamond Sword\n§l§e7 EMERALD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6a/Diamond_Sword_JE2_BE2.png/revision/latest?cb=20200217235945"],
+            "§6Knockback Stick\n§l§e2 EMERALD" => ["image" => "https://www.spigotmc.org/attachments/weather_stick-png.553082/"]],
+        2 => ["§6Wool 16x\n§l§e4 IRON" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/66/White_Wool_JE2_BE2.png/revision/latest?cb=20200317231954"],
+            "§6Sandstone 16x\n§l§e12 IRON" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/95/Sandstone_JE6_BE3.png/revision/latest?cb=20200317204927"],
+            "§6Endstone 12x\n§l§e24 IRON" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/End_Stone_JE3_BE2.png/revision/latest/scale-to-width-down/1200?cb=20200315175115"],
+            "§6Ladder 16x\n§l§e4 IRON" => ["image" => "https://minecraft-max.net/upload/iblock/521/521d019985da95114ffd23f7591ff2ea.png"],
+            "§6Oak Wood 16x\n§l§e4 GOLD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/94/Oak_Planks_JE5.png/revision/latest?cb=20200317041701"],
+            "§6Obsidian 4x\n§l§e4 EMERALD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/99/Obsidian_JE3_BE2.png/revision/latest?cb=20200124042057"]],
+        3 => ["§6Normal Bow\n§l§e12 GOLD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0f/Bow_%28MCD%29.png/revision/latest?cb=20200411164518"],
+            "§6Bow §b(Power 1)\n§l§e24 GOLD" => ["image" => "https://static.wikia.nocookie.net/minecraft/images/6/6b/EnchantedBow.gif/revision/latest/smart/width/300/height/300?cb=20200117003024"],
+            "§6Bow §b(Power 1, Punch 1)\n§l§e6 EMERALD" => ["image" => "https://static.wikia.nocookie.net/minecraft/images/6/6b/EnchantedBow.gif/revision/latest/smart/width/300/height/300?cb=20200117003024"],
+            "§6Arrow 16x\n§l§e4 GOLD" => ["image" => "https://pngset.com/images/arrow-minecraft-wiki-fandom-minecraft-arrow-symbol-cross-transparent-png-2488006.png"]],
+        4 => ["§6Speed II Potion (45 sec.)\n§l§e1 EMERALD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2c/Uncraftable_Potion_JE2.png/revision/latest?cb=20191027040943"],
+            "§6Jump V Potion (45 sec.)\n§l§e1 EMERALD" => ["https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/22/Potion_of_Leaping_JE1_BE1.png/revision/latest?cb=20200108004444"],
+            "§6Invisibility Potion (30 sec.)\n§l§e1 EMERALD" => ["https://static.wikia.nocookie.net/minecraft/images/b/bf/PotionOfSlowFallingNew.png/revision/latest?cb=20200116042148"]],
+        5 => ["§6Golden Apple\n§l§e3 GOLD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/54/Golden_Apple_JE2_BE2.png/revision/latest?cb=20200521041809"],
+            "§6Bedbug\n§l§e50 IRON" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2a/Snowball_JE3_BE3.png/revision/latest/scale-to-width-down/1200?cb=20190522005550"],
+            "§6Fireball\n§l§e50 IRON" => ["image" => "https://lh3.googleusercontent.com/LoRJx8LPqIMwmmRpQ9OFpv4OMgTKlbfLfRy_WW1TT06nsVVQEVIkNMOyfGRUMtgdSK4X2vYyXTU2mK1b6DOC6ldKCGeRP36zPy8=s400"],
+            "§6TNT\n§l§e8 GOLD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a2/TNT_JE3_BE2.png/revision/latest?cb=20210110120939"],
+            "§6Enderpearl\n§l§e4 EMERALD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f6/Ender_Pearl_JE3_BE2.png/revision/latest/scale-to-width-down/1200?cb=20200512195721"],
+            "§6Water Bucker\n§l§e1 EMERALD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/dc/Water_Bucket_JE2_BE2.png/revision/latest?cb=20190430112051"],
+            "§6Bridge Egg\n§l§e4 EMERALD" => ["image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/96/Egg_JE2_BE2.png/revision/latest?cb=20200512195802"],
+            "§6Compact Popup-Tower\n§l§e24 IRON" => ["image" => "https://static.wikia.nocookie.net/minecraft/images/b/b3/Chest.png/revision/latest?cb=20191220013856"]
         ],
     ];
 
@@ -94,7 +95,8 @@ class ItemShop
         ],
         3 => [0 => ["name" => "Bow 1", "type" => self::PURCHASE_TYPE_GOLD, "amount" => 1, "price" => 12, "item" => ["id" => ItemIds::BOW, "damage" => 0]],
             1 => ["name" => "Bow 2", "type" => self::PURCHASE_TYPE_GOLD, "amount" => 1, "price" => 24, "item" => ["id" => ItemIds::BOW, "damage" => 0]],
-            2 => ["name" => "Bow 3", "type" => self::PURCHASE_TYPE_EMERALD, "amount" => 1, "price" => 6, "item" => ["id" => ItemIds::BOW, "damage" => 0]]
+            2 => ["name" => "Bow 3", "type" => self::PURCHASE_TYPE_EMERALD, "amount" => 1, "price" => 6, "item" => ["id" => ItemIds::BOW, "damage" => 0]],
+            3 => ["name" => "Arrow", "type" => self::PURCHASE_TYPE_GOLD, "amount" => 16, "price" => 4, "item" => ["id" => ItemIds::ARROW, "damage" => 0]]
         ],
         4 => [0 => ["name" => "Potion of Speed", "type" => self::PURCHASE_TYPE_EMERALD, "amount" => 1, "price" => 1, "item" => ["id" => ItemIds::POTION, "damage" => 8194]],
             1 => ["name" => "Jump Potion", "type" => self::PURCHASE_TYPE_EMERALD, "amount" => 1, "price" => 1, "item" => ["id" => ItemIds::POTION, "damage" => 8203]],
@@ -105,7 +107,7 @@ class ItemShop
             2 => ["name" => "Fireball", "type" => self::PURCHASE_TYPE_IRON, "amount" => 1, "price" => 50, "item" => ["id" => ItemIds::FIRE_CHARGE, "damage" => 0]],
             3 => ["name" => "TNT", "type" => self::PURCHASE_TYPE_GOLD, "amount" => 1, "price" => 8, "item" => ["id" => ItemIds::TNT, "damage" => 0]],
             4 => ["name" => "Enderpearl", "type" => self::PURCHASE_TYPE_EMERALD, "amount" => 1, "price" => 4, "item" => ["id" => ItemIds::ENDER_PEARL, "damage" => 0]],
-            5 => ["name" => "Water Bucket", "type" => self::PURCHASE_TYPE_EMERALD, "amount" => 1, "price" => 1, "item" => ["id" => 325, "damage" => 8]],
+            5 => ["name" => "Water Bucket", "type" => self::PURCHASE_TYPE_EMERALD, "amount" => 1, "price" => 1, "item" => ["id" => 326, "damage" => 0]],
             6 => ["name" => "Bridge Egg", "type" => self::PURCHASE_TYPE_EMERALD, "amount" => 1, "price" => 4, "item" => ["id" => ItemIds::EGG, "damage" => 0, 'custom_name' => "§6Bridge Egg"]],
             7 => ["name" => "Compact Popup-Tower", "type" => self::PURCHASE_TYPE_IRON, "amount" => 1, "price" => 24, "item" => ["id" => ItemIds::CHEST, "damage" => 0, "custom_name" => "§bPopup Tower"]]
         ]

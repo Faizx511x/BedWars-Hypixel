@@ -24,7 +24,7 @@ class FakeItemEntity extends Human
      */
     public function onUpdate(int $currentTick): bool
     {
-        if($this->isClosed()){
+    	if($this->isClosed()){
 			return false;
         }
         if($this->location->yaw >= 360){

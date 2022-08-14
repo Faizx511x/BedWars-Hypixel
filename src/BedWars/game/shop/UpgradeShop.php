@@ -28,11 +28,11 @@ class UpgradeShop
      * @var array $shopWindows
      */
     public static $shopWindows = [
-        1 => ["name" => "Sharpened Swords", "image" => ""],
-        2 => ["name" => "Reinforced Armor", "image" => ""],
-        3 => ["name" => "Maniac Miner", "image" => ""],
-        4 => ["name" => "Iron Forge", "image" => ""],
-        5 => ["name" => "Heal Pool", "image" => ""]
+        1 => ["name" => "Sharpened Swords", "image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6a/Diamond_Sword_JE2_BE2.png/revision/latest?cb=20200217235945"],
+        2 => ["name" => "Reinforced Armor", "image" => "https://www.seekpng.com/png/full/819-8194450_minecraft-diamond-chestplate-chestplate-minecraft.png"],
+        3 => ["name" => "Maniac Miner", "image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a6/Golden_Pickaxe_JE4_BE3.png/revision/latest/scale-to-width-down/160?cb=20200226194041"],
+        4 => ["name" => "Iron Forge", "image" => "https://cdn.nookazon.com/hypixel/Accessories/Dungeon_Chest_Key.png"],
+        5 => ["name" => "Heal Pool", "image" => "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e2/Feather_JE3_BE2.png/revision/latest/scale-to-width-down/160?cb=20190430052113"]
     ];
 
     public static $page_ids = [
