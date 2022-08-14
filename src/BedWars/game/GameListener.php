@@ -33,7 +33,7 @@ use pocketmine\item\Item;
 use pocketmine\item\ItemIds;
 use pocketmine\entity\object\PrimedTNT;
 use BedWars\game\structure\popup_tower\PopupTower;
-use pocketmine\entity\projectile\Egg;
+use pocketmine\entity\projectile\{Egg, Snowball};
 use BedWars\game\entity\{Fireball, Golem, Bedbug};
 use pocketmine\network\mcpe\protocol\ModalFormResponsePacket;
 use pocketmine\player\Player;
@@ -54,6 +54,7 @@ use pocketmine\nbt\tag\ByteArrayTag;
 use pocketmine\nbt\tag\DoubleTag;
 use pocketmine\nbt\tag\FloatTag;
 use pocketmine\nbt\tag\ListTag;
+use pocketmine\events\entity\{ProjectileLaunchEvent, ProjectileHitEntityEvent};
 
 class GameListener implements Listener
 {
@@ -175,7 +176,6 @@ class GameListener implements Listener
 	
     public function spawnGolem($pos, $world, $player)
     {
-        if ($this->phase !== self::PHASE_GAME) return;
         $nbt = $this->createBaseNBT($pos);
         $entity = new Golem($world, $nbt);
         $entity->arena = $this;
@@ -185,7 +185,6 @@ class GameListener implements Listener
 
     public function spawnBedbug($pos, $world, $player)
     {
-        if ($this->phase !== self::PHASE_GAME) return;
         $nbt = $this->createBaseNBT($pos);
         $entity = new Bedbug($world, $nbt);
         $entity->arena = $this;
@@ -197,7 +196,7 @@ class GameListener implements Listener
     public function spawnFireball($pos, $world, $player)
     {
         $nbt = $this->createBaseNBT($pos, $player->getDirectionVector(), ($player->getLocation()->getYaw > 180 ? 360 : 0) - $player->getLocation()->getYaw, -$player->getLocation()->getPictch);
-        $entity = new Fireball($world, $nbt, $player);
+        $entity = new Fireball($world, $nbt);
         $entity->setMotion($player->getDirectionVector()->normalize()->multiply(0.4));
         $entity->spawnToAll();
         $entity->arena = $this;
