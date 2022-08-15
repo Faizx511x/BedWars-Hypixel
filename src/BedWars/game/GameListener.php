@@ -54,7 +54,7 @@ use pocketmine\nbt\tag\ByteArrayTag;
 use pocketmine\nbt\tag\DoubleTag;
 use pocketmine\nbt\tag\FloatTag;
 use pocketmine\nbt\tag\ListTag;
-use pocketmine\events\entity\{ProjectileLaunchEvent, ProjectileHitEntityEvent};
+use pocketmine\event\entity\{ProjectileLaunchEvent, ProjectileHitEntityEvent};
 
 class GameListener implements Listener
 {
