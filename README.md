@@ -1,8 +1,5 @@
-# BedWars Hypixel - PocketMine Plugin
-BedWars plugin with features you won't see anywhere else!
-
-![Image from game](https://i.imgur.com/X9zSs1u.png)</br>
-
+# BedWars
+A Edited Version Of BedWarsUlitimated but better
 ## Features
 - All basics of BedWars game
 - Spectator mode
@@ -13,18 +10,12 @@ BedWars plugin with features you won't see anywhere else!
 - More cool items
 - API 4.0.0 support
 - New updates every week
+- Golem, BedBug & Throwable Fireball (like Hypixel's)
+- Full teams from red to gray
 
-## How to setup
-- It is recommended to have installed MultiWorld by CzechPMDevs to make the setup easier.
-
-1. Create new game using /bw setlobby
-2. Teleport to your map's lobby and set lobby using/bw setlobby
-3. Add teams to your game /bw addteam
-4. Set beds using /bw setbed
-5. Set spawn & shop positions using /bw setpos , the position you're standing at will be used.
-6. Add generators using /bw addgenerator, again it is based on the position you're standing at.
-7. After you finished the setup you can load the arena using /bw load
-
-To create join sign place a new sign and put [bedwars] or [bw] on the first line, the second line will be the ID of your game.
-
-For support & updates join my discord server - https://discord.gg/6reG9s7T7
+# Todo-List -- ItsToxicGG
+- [X] Full Teams (red to gray not just red to gold) (needs to be tested)
+- [ ] New Generators
+- [X] Fireball, Golem & Bedbug (needs to be tested)
+- [ ] EnderDragon \\ Dragon if game is to long
+- And more sooN!
